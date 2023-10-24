@@ -1,0 +1,255 @@
+
+    {% load static %}
+
+    {% block content %} 
+            <!DOCTYPE html>
+        <html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <title>Vandall</title>
+                <link rel="stylesheet" href="{% static 'core/css/styles.css' %}">
+                <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="D:\Django-Project\Core\static\core\css/normalize.css">
+                <link rel="stylesheet" href="D:\Django-Project\Core\static\core\css/styles.css">
+                <link rel="icon" href="D:\Django-Project\Core\static\core\img/logoweb.png">
+                <link rel="stylesheet" href="D:\Django-Project\Core\static\core\css/flexslider.css" type="text/css">
+	            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	            <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	            <script src="js/jquery.flexslider.js"></script>
+	            <script type="text/javascript" charset="utf-8">
+            $(window).load(function() {
+                $('.flexslider').flexslider({
+    	            touch: true,
+    	            pauseOnAction: false,
+    	            pauseOnHover: false,
+                });
+            });
+            </script>
+            </head>
+            <body>
+<!----------------------------------CODIGO----------------------------->
+
+<!--BARRA DE INICIO Y HEADER-->
+
+                <header class="site-header inicio">
+                    <div class="contenedor contenido-header">
+                        <div class="barra">
+                            <a href="index.html">
+                                <a href="/"> <img src='{% static  "/Core/static/core/img/vandall.png" %}' alt="Logo Vandall"> </a>
+                            </a>
+
+                            <div class="mobile-menu">
+                                <a href="#navegacion">
+                                    <a href="/"> <img src="{% static  '\Django-Project\Core\static\core\img\barras.svg' %}" alt="Icono Menu"> </a>
+                                </a>
+                            </div>
+
+                            <nav id="navegacion" class="navegacion">
+                                <a href="nosotros.html">Nosotros</a>
+                                <a href="catalogo.html">Catalogo</a>
+                                <a href="novedades.html">Novedades</a>
+                                <a href="contacto.html">Contacto</a>
+                            </nav>
+                        </div>
+                        <h1>Automotora Vandall</h1>
+                    </div> 
+                </header>
+    
+
+<!--FIN BARRA DE INICIO Y HEADER -->
+
+
+<!--SECCION NOSOTROS-->
+    <section class="seccion nosotros">
+        <h2 class="fw-300 centrar-texto">Nos comprometemos!</h2>
+
+        <div class="iconos-nosotros">
+            <div class="icono">
+                <a href="/"> <img src="{% static  'core/img/icono1.png' %}"> </a>
+                <h3>Compra seguro</h3>
+                <p>Tu seguridad nos importa, por eso nos comprometemos a registrar y garantizar tu compra.</p>
+            </div>
+
+            <div class="icono">
+                <a href="/"> <img src="{% static  'core/img/icono2.png' %}" alt="Icono Mejor Precio"> </a>
+                
+                <h3>Precios economicos</h3>
+                <p>Nuestros precios economicos y ofertas de pagos te ayudaran a poder cumplir tu sueño.</p>
+            </div>
+
+            <div class="icono">
+                <a href="/"> <img src="{% static  'core/img/icono3.png' %}" alt="Icono a Tiempo"> </a>
+                <h3>Ejecutivos</h3>
+                <p>Entregamos un servicio personalizado mediante nuestros ejecutivos. </p>
+            </div>
+        </div>
+    </section>
+<!--FIN SECCION NOSOTROS-->
+
+
+<!--TIPOS DE VEHICULO-->
+    <main class="seccion contenedor">
+        <h2 class="fw-300 centrar-texto">Tipos de autos</h2>
+<!---->
+        <div class="contenedor-catalogo">
+                <div class="catalogo">
+                    <a href="/"> <img src="{% static  'core/img/ventaauto.webp' %}" alt="tipo vehiculo deportivos"> </a>
+                    <div class="contenido-catalogo">
+                        <h3>DEPORTIVOS</h3>
+                        <br>
+                        <br>
+                        <p>Vehiculos deportivos desde los:</p>
+                        <p class="precio">$22.000.000</p>
+                        <ul class="icono-stock">
+                            <li>
+                                <a href="/"> <img src="{% static  'core/img/stock.png' %}" alt="icono stock"> </a>
+                            </li>
+                        </ul>
+                        <a href="catalogo.html" class="boton boton-naranja d-block">Ver Vehiculos</a>
+                    </div>
+                </div>
+
+                <div class="catalogo">
+                    <a href="/"> <img src="{% static  'core/img/ventajeep.png' %}" alt="tipo vehiculo 4x4"> </a>
+                    <div class="contenido-catalogo">
+                        <h3> 4X4</h3>
+                        <br>
+                        <br>
+                        <br>
+                        <p>Vehiculos 4x4 desde los:</p>
+                        <p class="precio">$4.000.000</p>
+                        <ul class="icono-stock">
+                            <li>
+                                <a href="/"> <img src="{% static  'core/img/stock.png' %}" alt="icono stock"> </a>
+                            <li>
+                        </ul>
+
+                        <a href="catalogo.html" class="boton boton-naranja d-block">Ver Vehiculos</a>
+                    </div>
+                </div>
+
+                <div class="catalogo">
+                    <a href="/"> <img src="{% static  'core/img/citycar.png' %}" alt="tipo vehiculo citycar"> </a>
+                    <div class="contenido-catalogo">
+                        <h3>City Car</h3>
+                        <br>
+                        <br>
+                        <br>
+                        <p>Vehiculos para ciudad desde los:</p>
+                        <p class="precio">$3.000.000</p>
+                        <ul class="icono-stock">
+                            <li>
+                                <a href="/"> <img src="{% static  'core/img/stock.png' %}" alt="icono stock"> </a>
+                            </li>
+                        </ul>
+
+                        <a href="catalogo.html" class="boton boton-naranja d-block">Ver Vehiculos</a>
+                    </div>
+                </div>
+            </div>
+            <a href="catalogo.html" class="boton boton-naranja d-block">Ver todos los Vehiculos</a>
+            </main>
+<!--FIN TIPOS DE VEHICULOS-->
+
+<!--Slider-->
+<div class="flexslider">
+    <ul class="slides">
+        <li>
+            <img src="img/MUSTANG.png" alt="">
+            <section class="flex-caption">
+                <p>Ford Mustang</p>
+            </section>
+        </li>
+        <li>
+            <img src="img/camaro1.png" alt="">
+            <section class="flex-caption">
+                <p>Chevrolet Camaro</p>
+            </section>
+        </li>
+        <li>
+            <img src="img/Citroen-DS3.png" alt="">
+            <section class="flex-caption">
+                <p>Citroen DS3</p>
+            </section>
+        </li>
+    </ul>
+</div>
+<br>
+<!--fin Slider-->
+    <section class="imagen-contacto">
+        <div class="contenedor contenido-contacto">
+            <h2>Empieza un nuevo viaje!</h2>
+            <p>Llena el formulario de contacto, para brindar un mejor servicio</p>
+            <a href="contacto.html" class="boton boton-naranja">Contactános</a>
+        </div>
+    </section>
+
+    <div class="seccion-inferior contenedor seccion">
+        <section class="novedades">
+            <h3 class="centrar-texto fw-300">Novedades</h3>
+
+            <article class="entrada-novedades">
+                <div class="imagen">
+                    <a href="/"> <img src="{% static  'core/img/ds 3 crossback.jpg' %}" alt="Entrada de novedades"> </a>
+                </div>
+                <div class="texto-entrada">
+                    <a href="entrada.html">
+                        <h4>La nueva apuesta de energía eléctrica de “Ds automobiles".</h4>
+                    </a>
+                    <p>Escrito el: <span> 26/08/2019 </span> por: <span> Vicente Amigo </span> </p>
+                    <p>Descubre la nueva apuesta en autos eléctricos de gama alta por parte de la empresa francesa.</p>
+                </div>
+            </article>
+
+            <article class="entrada-novedades">
+                <div class="imagen">
+                    <a href="/"> <img src="{% static  'core/img/suzuki swift.jpg' %}" alt="Entrada de novedades"> </a>
+                </div>
+                <div class="texto-entrada">
+                    <a href="entrada2.html">
+                        <h4>¿Quieres tu auto en la mejor forma?</h4>
+                    </a>
+                    <p>Escrito el: <span> 26/08/2019 </span> por: <span> Vicente Amigo </span> </p>
+                    <p>Si quieres tener tu auto en el mejor estado, sigue estos consejos.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="testimoniales">
+            <h3 class="centrar-texto fw-300">Recomendacionens</h3>
+            <div class="testimonial">
+                
+                <blockquote>
+                   Recomiendo Vandall, ya que tienen una gran variedad de automoviles a un gran precio, logre mi sueño del auto propio.
+                </blockquote>
+                <p>- Sebastian Latorre - Cliente de Vandall</p>
+            </div>
+        </section>
+    </div>
+
+
+    <!--BARRA SOCIAL-->
+    <div class="social-bar">
+            <a href="https://www.facebook.com" class="icon icon-facebook" target="_blank"><img src="img/Facebook.png"></a>
+            <a href="https://twitter.com" class="icon icon-twitter" target="_blank"><img src="img/Twitter.png"></a>
+            <a href="https://www.youtube.com" class="icon icon-youtube" target="_blank"><img src="img/YouTube.png"></a>
+            <a href="https://www.instagram.com" class="icon icon-instagram" target="_blank"><img src="img/Instagram.png"></a>
+    </div>
+     <!--fin barra social-->
+
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="catalogo.html">Catalogo</a>
+                <a href="novedades.html">Novedades</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <p class="copyright">Todos los Derechos Reservados 2019 &copy; </p>
+        </div>
+    </footer>
+    {% endblock %}
+</body>
+</html>

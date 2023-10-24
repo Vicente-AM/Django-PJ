@@ -1,0 +1,110 @@
+{% extends 'core/base.html' %}
+
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vandall Nosotros</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/logoweb.png">
+</head>
+<body>
+
+        {% block content %}
+
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="index.html">
+                    <img src="img/vandall.png" alt="Logo Vandall">
+                </a>
+                <div class="mobile-menu">
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="Icono Menu">
+                    </a>
+                </div>
+
+                <nav id="navegacion" class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="catalogo.html">Catalogo</a>
+                    <a href="novedades.html">Novedades</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div> 
+    </header>
+    
+    
+    <main class="contenedor">
+        <h1 class="fw-300 centrar-texto">Nuestra Experiencia</h1>
+        
+
+        <div class="contenido-nosotros">
+            <div class="imagen">
+                <img src="img/carretera3jpg.jpg" alt="Imagen Sobre Nosotros">
+            </div>
+            <div class="texto-nosotros">
+                <blockquote>Nuestro Servicio</blockquote>
+
+               <p>La importancia del auto en la vida cotidiana Los automóviles son hoy en día algo muy útil para la sociedad y tienen muchas </p>
+
+               <p>entajas para vida diaria una de esas ventajas es que tu puedes elegir el lugar a donde quieres ir y a que hora quieres ir. </p> 
+
+               <p>Por eso VANDALL estamos comprometidos a poder guiar en tu busqueda del auto de tus sueños, de esta forma poder empezar un nuevo viaje.</p>
+            </div>
+        </div>
+    </main>
+    
+    <section class="contenedor seccion">
+        <h2 class="fw-300 centrar-texto">Nos comprometemos!</h2>
+
+        <div class="iconos-nosotros">
+            <div class="icono">
+                <img src="{% static Core/img/icono1.png%}" alt="Icono Seguridad">
+                <h3>Compra seguro</h3>
+                <p>Tu seguridad nos importa, por eso nos comprometemos a registrar y garantizar tu compra.</p>
+            </div>
+
+            <div class="icono">
+                <img src="img/icono2.png" alt="Icono Mejor Precio">
+                <h3>Precios economicosS</h3>
+                <p>Nuestros precios economicos y ofertas de pagos te ayudaran a poder cumplir tu sueño.</p>
+            </div>
+
+            <div class="icono">
+                <img src="img/icono3.png" alt="Icono a Tiempo">
+                <h3>Ejecutivos</h3>
+                <p>Entregamos un servicio personalizado mediante nuestros ejecutivos. </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="social-bar">
+            <a href="https://www.facebook.com" class="icon icon-facebook" target="_blank"><img src="img/Facebook.png"></a>
+            <a href="https://twitter.com" class="icon icon-twitter" target="_blank"><img src="img/Twitter.png"></a>
+            <a href="https://www.youtube.com" class="icon icon-youtube" target="_blank"><img src="img/YouTube.png"></a>
+            <a href="https://www.instagram.com" class="icon icon-instagram" target="_blank"><img src="img/Instagram.png"></a>
+    </div>
+{% endblock %}
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="catalogo.html">Catalogo</a>
+                <a href="novedades.html">Novedades</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <p class="copyright">Todos los Derechos Reservados 2019 &copy; </p>
+        </div>
+    </footer>
+    
+</body>
+</html>
