@@ -1,3 +1,6 @@
+{% load static %}
+
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vandall Catalogo</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="D:\Django-Project\Core\static\Core\css\normalize.css">
-    <link rel="stylesheet" href="D:\Django-Project\Core\static\Core\css\styles.css">
-    <link rel="icon" href="img/logoweb.png">
+    <link rel="stylesheet" href="{% static 'core/css/styles.css' %}">
+    <link rel="icon" href="{% static 'core/img/logoweb.png' %}">
     
 </head>
 <body>
@@ -42,7 +44,7 @@
 
         <div class="contenedor-catalogo">
             <div class="catalogo">
-                <img src="D:\Django-Project\Core\static\core\img/ventajeep.png">
+                <img src="{% static 'core\img\ventajeep.png' %} ">
                 <div class="contenido-catalogo">
                     <p></p>
                     
@@ -60,7 +62,7 @@
             </div>
 
             <div class="catalogo">
-                <img src="D:\Django-Project\Core\static\core\img/ventaauto.webp" >
+                <img src="{% static 'core\img\ventaauto.webp' %} " >
                 <div class="contenido-catalogo">
                     <h3>Audi R8</h3>
                     <p>Prácticamente A Diferencia De Cualquier Otro Deportivo, Proporciona Una Sensación De Control Sobre Una Potencia Casi Ilimitada.</p>
@@ -216,5 +218,6 @@
             <p class="copyright">Todos los Derechos Reservados 2019 &copy; </p>
         </div>
     </footer>
+    {% endblock %}
 </body>
 </html>

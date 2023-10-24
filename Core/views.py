@@ -5,20 +5,23 @@ from .models import Usuario
 # Create your views here.
 
 def home(request):
-    return render(request, "D:\Django-Project\Core\Templates\Core\home.html")
+    return render(request, "D:\MiProyecto\Core\Templates\core\home.html")
 
 def index(request):
-    return render(request, "D:\Django-Project\Core\Templates\Core\index.html")
-
-def nosotros(request):
-    return render(request, "/Core/Templates/Core/nosotros.html")
+    return render(request, "D:\MiProyecto\Core\Templates\core\index.html")
 
 def catalogo(request):
-    return render(request, "D:\Django-Project\Core\Templates\Core\catalogo.html")
+    return render(request, "D:\MiProyecto\Core\Templates\core\catalogo.html")
+
+def contacto(request):
+    return render(request, "D:\MiProyecto\Core\Templates\core\contacto.html")
+
+def nosotros(request):
+    return render(request, "D:/MiProyecto/Core/Templates/core/nosotros.html")
 
 def formulario(request):
     formulario = proyectoForm()
-    return render(request, "D:\Django-Project\Core\Templates\Core\formulario.html", {'form': formulario})
+    return render(request, "D:\Django-Project\MiProyecto\Templates\core\formulario.html", {'form': formulario})
 
 def usuarios(request):
     usuarios = Usuario.objects.all()
