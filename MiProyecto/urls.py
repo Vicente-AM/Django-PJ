@@ -20,11 +20,11 @@ from Core import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home', views.home, name="home"),
-    path('nosotros.html', views.nosotros, name="nosotros.html"),
+    path('', views.home, name="home"), #este deberia ser index
+    path('nosotros.html', views.nosotros, name="nosotros"),
     path('contacto.html', views.contacto, name="contacto"),
     path('catalogo.html', views.catalogo, name="catalogo"),
-    path('', views.formulario, name="formulario"),
-    path('index', views.index, name="index"),
+#    path('', views.formulario, name="formulario"),
+    path('index.html', views.index, name="index"),
 
 ]

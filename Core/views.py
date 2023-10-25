@@ -19,9 +19,9 @@ def contacto(request):
 def nosotros(request):
     return render(request, "D:/MiProyecto/Core/Templates/core/nosotros.html")
 
-def formulario(request):
-    formulario = proyectoForm()
-    return render(request, "D:\Django-Project\MiProyecto\Templates\core\formulario.html", {'form': formulario})
+#def formulario(request):
+#    formulario = proyectoForm()
+#    return render(request, "D:\Django-Project\MiProyecto\Templates\core\formulario.html", {'form': formulario})
 
 def usuarios(request):
     usuarios = Usuario.objects.all()
