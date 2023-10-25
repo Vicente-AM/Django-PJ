@@ -5,19 +5,22 @@ from .models import Usuario
 # Create your views here.
 
 def home(request):
-    return render(request, "D:\MiProyecto\Core\Templates\core\home.html")
+    return render(request, "home.html")
 
 def index(request):
-    return render(request, "D:\MiProyecto\Core\Templates\core\index.html")
+    return render(request, 'index.html')
+
+def entrada(request):
+    return render(request, "entrada.html")
 
 def catalogo(request):
-    return render(request, "D:\MiProyecto\Core\Templates\core\catalogo.html")
+    return render(request, "catalogo.html")
 
 def contacto(request):
-    return render(request, "D:\MiProyecto\Core\Templates\core\contacto.html")
+    return render(request, "contacto.html")
 
 def nosotros(request):
-    return render(request, "D:/MiProyecto/Core/Templates/core/nosotros.html")
+    return render(request, "nosotros.html")
 
 #def formulario(request):
 #    formulario = proyectoForm()

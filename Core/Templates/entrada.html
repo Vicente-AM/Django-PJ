@@ -1,3 +1,6 @@
+{% load static %}
+
+{% block content %} 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vandall E1</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="img/logoweb.png">
+    <link rel="stylesheet" href="{% static 'core/css/styles.css' %}">
+    <link rel="icon" href="{% static 'core/img/logoweb.png' %}">
+    <link rel="icon" href="{% static 'img/logoweb.png' %}">
 </head>
 <body>
 
@@ -84,5 +87,6 @@
             <p class="copyright">Todos los Derechos Reservados 2019 &copy; </p>
         </div>
     </footer>
+    {% endblock %}
 </body>
 </html>

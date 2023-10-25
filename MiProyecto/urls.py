@@ -26,5 +26,6 @@ urlpatterns = [
     path('catalogo.html', views.catalogo, name="catalogo"),
 #    path('', views.formulario, name="formulario"),
     path('index.html', views.index, name="index"),
+    path('entrada.html', views.entrada, name="entrada"),
 
 ]
