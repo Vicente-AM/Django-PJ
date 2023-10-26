@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'MiProyecto.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Usuarios',
+        'NAME': 'AutosDB',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',

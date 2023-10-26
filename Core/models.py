@@ -15,10 +15,14 @@ class Proyecto(models.Model):
 
 class Usuario(models.Model):
     id = models.AutoField(primary_key=True)
-    nombre = models.CharField(max_length=100)
-    descripcion = models.TextField(verbose_name="Descripción", max_length=500)
-    fecha_creacion = models.DateTimeField(auto_now_add=True)
+    Marca = models.CharField(max_length=30)
+    Modelo = models.CharField(max_length=100)
+    #Año = models.DateField("YYYY")
+    #fecha_creacion = models.DateTimeField(auto_now_add=True)
+    #nombre = models.CharField(max_length=100)
+    #descripcion = models.TextField(verbose_name="Descripción", max_length=500)
+    #fecha_creacion = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        fila = "Nombre usuario: " + self.nombre + " - " + "Descripción: " + self.descripcion
+        fila = "Modelo: " + self.nombre + " - " + "Descripción: " + self.descripcion
         return fila
