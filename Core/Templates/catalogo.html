@@ -15,6 +15,16 @@
 </head>
 <body>
 
+    <table>
+        <h1>hola</h1>
+        {% for usuarios in usuarios %}
+        <tr>
+            <td>{{ usuarios.id }}</td>
+            <td>{{ usuarios.descripcion }}</td>
+            <td>{{ usuarios.nombre }}</td>
+        </tr>
+        {% endfor %}
+    </table>
     <header class="site-header">
         <div class="contenedor contenido-header">
             <div class="barra">

@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Usuario
+from .models import Autos
 
 # Create your views here.
 
@@ -14,7 +14,8 @@ def entrada(request):
     return render(request, "entrada.html")
 
 def catalogo(request):
-    return render(request, "catalogo.html")
+    autos = Autos.objects.all()
+    return render(request, "catalogo.html", {'autos': autos})
 
 def contacto(request):
     return render(request, "contacto.html")
@@ -26,9 +27,9 @@ def nosotros(request):
 #    formulario = proyectoForm()
 #    return render(request, "D:\Django-Project\MiProyecto\Templates\core\formulario.html", {'form': formulario})
 
-def usuarios(request):
-    usuarios = Usuario.objects.all()
-    return render(request, 'usuarios/catalogo.html', {'usuarios': usuarios})
+#def usuarios(request):
+#    usuarios = Usuario.objects.all()
+#    return render(request, 'usuarios/catalogo.html', {'usuarios': usuarios})
 
 
 
