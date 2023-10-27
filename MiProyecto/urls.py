@@ -18,6 +18,9 @@ from django.urls import path
 from django.urls import include
 from Core import views
 
+from django.conf import settings
+from django.contrib.staticfiles.urls import static
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name="home"), #este deberia ser index
@@ -28,4 +31,4 @@ urlpatterns = [
     path('index.html', views.index, name="index"),
     path('entrada.html', views.entrada, name="entrada"),
 
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

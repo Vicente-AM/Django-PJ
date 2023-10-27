@@ -13,6 +13,9 @@ def index(request):
 def entrada(request):
     return render(request, "entrada.html")
 
+#def catalogo(request):
+#    return render(request, "catalogo.html")
+
 def catalogo(request):
     autos = Autos.objects.all()
     return render(request, "catalogo.html", {'autos': autos})

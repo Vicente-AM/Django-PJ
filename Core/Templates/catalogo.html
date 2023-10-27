@@ -14,17 +14,6 @@
     
 </head>
 <body>
-
-    <table>
-        <h1>hola</h1>
-        {% for usuarios in usuarios %}
-        <tr>
-            <td>{{ usuarios.id }}</td>
-            <td>{{ usuarios.descripcion }}</td>
-            <td>{{ usuarios.nombre }}</td>
-        </tr>
-        {% endfor %}
-    </table>
     <header class="site-header">
         <div class="contenedor contenido-header">
             <div class="barra">
@@ -49,6 +38,22 @@
 
 <!--INICIO CATALOGO-->
 
+    <table>
+        <h1>Catalogo BDD</h1>
+        {% for autos in autos %}
+        
+        <tr>
+            <td>{{ autos.id }}</td>
+            <td>{{ autos.Marca }}</td>
+            <td>{{ autos.Modelo }}</td>
+            <td>
+                
+                <img  src="{{ autos.Imagen.url }}" height="100" >
+
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
     <main class="seccion contenedor">
         <h1 class="fw-300 centrar-texto">Catalogo de Vehiculos</h1>
 
