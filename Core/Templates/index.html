@@ -11,13 +11,13 @@
                 <title>Vandall</title>
                 <link rel="stylesheet" href="{% static 'core/css/styles.css' %}">
                 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-                <link rel="stylesheet" href="D:\MiProyecto\Core\static\core\css\normalize.css">
+                <link rel="stylesheet" href="{% static 'core\css\normalize.css' %}">
                 
-                <link rel="icon" href="D:\Django-Project\Core\static\core\img/logoweb.png">
-                <link rel="stylesheet" href="D:\Django-Project\Core\static\core\css/flexslider.css" type="text/css">
+                <link rel="icon" href="{% static 'core\img/logoweb.png' %}">
+                <link rel="stylesheet" href="{% static 'core\css/flexslider.css' %}" type="text/css">
 	            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	            <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	            <script src="js/jquery.flexslider.js"></script>
+	            <script src="{% static 'Core/js/jquery.flexslider.js' %}"></script>
 	            <script type="text/javascript" charset="utf-8">
             $(window).load(function() {
                 $('.flexslider').flexslider({
@@ -37,7 +37,7 @@
                     <div class="contenedor contenido-header">
                         <div class="barra">
                             <a href="index.html">
-                                <a href="/"> <img src='{% static  "/Core/static/core/img/vandall.png" %}' alt="Logo Vandall"> </a>
+                                <a href="/"> <img src='{% static  "core/img/vandall.png" %}' alt="Logo Vandall"> </a>
                             </a>
 
                             <div class="mobile-menu">
@@ -157,19 +157,19 @@
 <div class="flexslider">
     <ul class="slides">
         <li>
-            <img src="img/MUSTANG.png" alt="">
+            <img src="{% static  'core/img/MUSTANG.png' %}" alt="">
             <section class="flex-caption">
                 <p>Ford Mustang</p>
             </section>
         </li>
         <li>
-            <img src="img/camaro1.png" alt="">
+            <img src="{% static  'core/img/camaro1.png' %}" alt="">
             <section class="flex-caption">
                 <p>Chevrolet Camaro</p>
             </section>
         </li>
         <li>
-            <img src="img/Citroen-DS3.png" alt="">
+            <img src="{% static  'core/img/Citroen-DS3.png' %}" alt="">
             <section class="flex-caption">
                 <p>Citroen DS3</p>
             </section>
@@ -232,10 +232,10 @@
 
     <!--BARRA SOCIAL-->
     <div class="social-bar">
-            <a href="https://www.facebook.com" class="icon icon-facebook" target="_blank"><img src="img/Facebook.png"></a>
-            <a href="https://twitter.com" class="icon icon-twitter" target="_blank"><img src="img/Twitter.png"></a>
-            <a href="https://www.youtube.com" class="icon icon-youtube" target="_blank"><img src="img/YouTube.png"></a>
-            <a href="https://www.instagram.com" class="icon icon-instagram" target="_blank"><img src="img/Instagram.png"></a>
+            <a href="core/https://www.facebook.com" class="icon icon-facebook" target="_blank"><img src="{% static  'core/img/Facebook.png'%}"></a>
+            <a href="core/https://twitter.com" class="icon icon-twitter" target="_blank"><img src="{% static  'core/img/Twitter.png'%}"></a>
+            <a href="core/https://www.youtube.com" class="icon icon-youtube" target="_blank"><img src="{% static  'core/img/YouTube.png'%}"></a>
+            <a href="https://www.instagram.com" class="icon icon-instagram" target="_blank"><img src="{% static  'core/img/Instagram.png'%}"></a>
     </div>
      <!--fin barra social-->
 
@@ -247,7 +247,7 @@
                 <a href="novedades.html">Novedades</a>
                 <a href="contacto.html">Contacto</a>
             </nav>
-            <p class="copyright">Todos los Derechos Reservados 2019 &copy; </p>
+            <p class="copyright">Todos los Derechos Reservados 2019 - 2023 &copy; </p>
         </div>
     </footer>
     {% endblock %}

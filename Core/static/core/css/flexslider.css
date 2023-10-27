@@ -8,12 +8,12 @@
 }
 
 *{
-	margin: 0;
+	margin: 4px;
 	padding: 0;
 }
 
 .flexslider{
-	width: 70%;
+	width: 60%;
 	position:relative;
     margin-left:auto;
     margin-right:auto;
