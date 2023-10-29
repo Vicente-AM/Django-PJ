@@ -15,9 +15,9 @@ class Proyecto(models.Model):
 
 class Autos(models.Model):
     id = models.AutoField(primary_key=True)
-    Marca = models.CharField(max_length=100)
-    Modelo = models.CharField(max_length=100)
-    Imagen = models.ImageField(upload_to='imagenes/', null=True)
+    Marca = models.CharField(max_length=100, verbose_name="Marca")
+    Modelo = models.CharField(max_length=100, verbose_name="Modelo")
+    Imagen = models.ImageField(upload_to='imagenes/', null=True, verbose_name="Imagen")
     #nombre = models.CharField(max_length=100)
     #descripcion = models.TextField(verbose_name="Descripción", max_length=500)
     fecha_creacion = models.DateTimeField(auto_now_add=True)

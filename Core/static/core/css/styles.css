@@ -15,7 +15,6 @@ body {
     font-size: 1.6rem;
     line-height: 2;
 }
-
 /* Estilos globales */
 /* Definnimos los margenes de los estilos */
 img {
@@ -26,6 +25,7 @@ img {
     max-width: 120rem; 
     margin: 0 auto;
 }
+
 h1 {
     font-size: 3.8rem;
 }
@@ -36,7 +36,7 @@ h3 {
     font-size: 3rem;
 }
 h4 {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
 }
 
 /* Utilidades para aplicar */
@@ -56,6 +56,7 @@ h4 {
 .contenido-centrado {
     max-width: 800px;
 }
+
 
 /* Botones */
 .boton {
@@ -227,13 +228,9 @@ h4 {
     .catalogo {
         flex: 0 0 calc(33.3% - 1rem);
     }
-}
-.contenido-catalogo {
-    padding: 2rem;
-}
-.contenido-catalogo h3, 
-.contenido-catalogo p  {
-    margin: 0;
+
+.texto-marca{
+    color: #E08709;
 }
 .precio {
     color:green;
@@ -399,7 +396,7 @@ legend {
     font-size: 2rem;
     color: #4f4f4f;
 }
-label {
+.label-contacto {
     font-weight: 700;
     text-transform: uppercase;
     display: block;
@@ -492,3 +489,34 @@ textarea {
 	border-radius: 1rem 0 0 1rem;
 	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
 }
+
+/* FORMULARIO */
+/* Definición de la clase .form-control */
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  /* Estilos adicionales que desees agregar */
+  .form-control:focus {
+    border-color: #007bff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  /* Otros estilos personalizados */
+  /* Por ejemplo, si deseas cambiar el color del texto en los elementos con la clase .form-control */
+  .form-control.error {
+    color: rgb(255, 0, 0);
+  }
+  
+  /* Agregar más estilos según tus necesidades */

@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import Autos
+from .forms import AutoForm
 
 # Create your views here.
 
@@ -13,8 +14,15 @@ def index(request):
 def entrada(request):
     return render(request, "entrada.html")
 
-#def catalogo(request):
-#    return render(request, "catalogo.html")
+def crear(request):
+    formulario = AutoForm(request.POST or None, request.FILES or None)
+    if formulario.is_valid():
+        formulario.save()
+        return redirect('catalogo.html')
+    return render(request, "crear.html", {'formulario': formulario})
+
+def formulario(request):
+    return render(request, "formulario.html")
 
 def catalogo(request):
     autos = Autos.objects.all()

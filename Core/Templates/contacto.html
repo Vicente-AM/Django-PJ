@@ -60,24 +60,24 @@
         <form class="contacto" action="">
             <fieldset>
                 <legend>Formulario</legend>
-                <label for="nombre">Nombre:</label>
+                <label class="label-contacto" for="nombre">Nombre:</label>
                 <input type="text" id="nombre" placeholder="Tu Nombre">
-                <label for="Rut">Rut: </label>
+                <label class="label-contacto" for="Rut">Rut: </label>
                 <input type="number" id="RUT" placeholder="Ingresa tu RUT" required>
-                <label for="email">E-mail: </label>
+                <label  class="label-contacto"for="email">E-mail: </label>
                 <input type="email" id="email" placeholder="Tu Correo electrónico" required>
-                <label for="telefono">Teléfono:</label>
+                <label class="label-contacto" for="telefono">Teléfono:</label>
                 <input type="tel" id="telefono" placeholder="Tu Teléfono" required>
-                <label for="mensaje">Mensaje: </label>
+                <label class="label-contacto" for="mensaje">Mensaje: </label>
                 <textarea  id="mensaje"></textarea>
                 <legend>Información sobre Vehiculo</legend>
-                <label for="opciones">Comprar o Vender Parte de pago</label>
+                <label class="label-contacto" for="opciones">Comprar o Vender Parte de pago</label>
                 <select id="opciones">
                     <option value="" disabled selected>Seleccione</option>
                     <option value="Compra">Compra</option>
                     <option value="Vende">Vender Parte de pago</option>
                 </select>
-                <label for="Modelo">Modelo Vehiculo:</label>
+                <label class="label-contacto" for="Modelo">Modelo Vehiculo:</label>
                 <input type="text" id="Modelo" placeholder="Modelo Vehiculo que desea comprar" required>
                 <p>Si eligió dar vehiculo en parte de pago, indique su modelo</p>
                 <label for="Modelo">Modelo Vehiculo en parte de pago:</label>
@@ -85,17 +85,17 @@
                 <legend>Contacto</legend>
                 <p>Como desea ser Contactado:</p>
                 <div class="forma-contacto">
-                    <label for="telefono">Teléfono</label>
+                    <label class="label-contacto" for="telefono">Teléfono</label>
                     <input type="radio" name="contacto" value="telefono" id="telefono">
 
-                    <label for="correo">E-mail</label>
+                    <label class="label-contacto" for="correo">E-mail</label>
                     <input type="radio" name="contacto" value="correo" id="correo">
                 </div>
                 <p>Si eligió Telefono, elija la fecha y la hora</p>
-                <label for="fecha">Fecha:</label>
+                <label class="label-contacto" for="fecha">Fecha:</label>
                 <input type="date" id="fecha">
 
-                <label for="hora">Hora:</label>
+                <label class="label-contacto" for="hora">Hora:</label>
                 <input type="time" id="hora" min="09:00" max="18:00">
             </fieldset>
 

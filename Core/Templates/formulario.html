@@ -1,15 +1,22 @@
-{% extends 'core/base.html' %}
+    <form enctype="multipart/form-data" method="POST"> 
+        {% csrf_token %}
+        
+        {% for campo in formulario%}
+            <!--{{ form.as_p }}-->
+            <div>
+                <label for="">{{ campo.label }}</label>
+                <input type="{{ campo.field.widget.input_type }}"
+                class="form-control" 
+                name="{{ campo.name }}" 
+                id="" 
+                aria-describedby="helpId" 
+                placeholder="{{campo.label}}"/>
+            </div>
+            
+            <div class"col-12 help-text"> {{campo.errors}}</div>
 
+        {% endfor %}
 
-    {% load static %}
+        <input type="submit" value="Enviar" class="boton boton-naranja d-block">
 
-    {% block content %}
-        <form method="POST"> {% csrf_token %}
-            {{ form.as_p }}
-
-            <button type="submit"></button>
-
-        </form>
-
-    
-    {% endblock %}
+    </form>

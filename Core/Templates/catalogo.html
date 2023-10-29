@@ -58,23 +58,24 @@
         <h1 class="fw-300 centrar-texto">Catalogo de Vehiculos</h1>
 
         <div class="contenedor-catalogo">
+            {% for autos in autos %}
             <div class="catalogo">
-                <img src="{% static 'core\img\ventajeep.png' %} ">
+                <img src= "{{ autos.Imagen.url }}">
                 <div class="contenido-catalogo">
-                    <p></p>
-                    
-                    <h3>JEEP Willys</h3>
+                    <h3>{{ autos.Modelo }}</h3>
+                    <p class="precio"> {{autos.Marca}} </p>
                     <p>El Jeep Willys. Un vehículo versátil hecho en base a un tractor multifuncional de no más de 1000 Kg, el cual hacía labores de transporte, exploración y rescate.</p>
                     <p class="precio">$10.000.000</p>
 
                     <ul class="icono-stock">
                         <li>
-                            <img src="D:\Django-Project\Core\static\core\img/stock.png">
+                            <img src="{% static 'core/img/stock.png' %}">
                         </li>
                     </ul>
                     <a href="reserva.html" class="boton boton-naranja d-block">Reservar</a>
                 </div>
             </div>
+            {% endfor %}
 
             <div class="catalogo">
                 <img src="{% static 'core\img\ventaauto.webp' %} " >
